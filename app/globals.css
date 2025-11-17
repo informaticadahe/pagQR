@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+#devtools-indicator {
+  display: none !important;
+}
+.shadow-lg{
+  width: clamp(300px, 50vw, 800px);
+  height: clamp(200px, 30vh, 600px);
+  outline: 2px double gray;
+}
