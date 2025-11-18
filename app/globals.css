@@ -30,5 +30,6 @@ body {
 .shadow-lg{
   width: clamp(300px, 50vw, 800px);
   height: clamp(200px, 30vh, 600px);
+  aspect-ratio: 4 / 3;
   outline: 2px double gray;
 }

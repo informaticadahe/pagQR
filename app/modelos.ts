@@ -1,4 +1,12 @@
-export const modelos = [
+export interface Modelo {
+  id: string;
+  nombre: string;
+  img: string;
+  obj: string;
+  mtl: string;
+}
+
+export const modelos: Modelo[] = [
   {
     id: "sherman",
     nombre: "Sherman",

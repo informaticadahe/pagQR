@@ -1,12 +1,24 @@
-"use client";
-import * as React from "react";
-import { modelos } from "../../modelos";
+import React from "react";
+import { modelos, Modelo } from "../../modelos";
 import ThreeViewer from "../../components/3Dvista";
 
-export default function ModeloPage({ params }) {
-  const { id } = React.use(params); // <-- la forma correcta en Next.js 15
+interface ModeloPageProps {
+  params: Promise<{ id: string }>;
+}
 
-  const modelo = modelos.find((m) => m.id === id);
-  if (!modelo) return <p>Modelo no encontrado.</p>;
-  return <ThreeViewer obj={modelo.obj} mtl={modelo.mtl} name={modelo.nombre}  className="asd"/>;
+export default function ModeloPage({ params }: ModeloPageProps) {
+  const { id } = React.use(params);
+
+  const modelo = modelos.find((m: Modelo) => m.id === id);
+
+  if (!modelo) {
+    return <div>Modelo no encontrado</div>;
+  }
+
+  return (
+    <div>
+      <h1>{modelo.nombre}</h1>
+      <ThreeViewer obj={modelo.obj} mtl={modelo.mtl} name={modelo.nombre} />
+    </div>
+  );
 }

@@ -1,14 +1,21 @@
 "use client";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-export default function ThreeViewer({ obj, mtl, name }) {
+interface ThreeViewerProps {
+  obj: string;
+  mtl: string;
+  name: string;
+}
+
+export default function ThreeViewer({ obj, mtl, name }: ThreeViewerProps) {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   const centerObject = (object: THREE.Object3D) => {
+    // ... resto del código
     const box = new THREE.Box3().setFromObject(object);
     const center = box.getCenter(new THREE.Vector3());
     object.position.x -= center.x;
