@@ -10,14 +10,14 @@ export const modelos: Modelo[] = [
   {
     id: "sherman",
     nombre: "Sherman",
-    img: "/images/sherman.jpg",
+    img: "/3D/images/sherman.png",
     obj: "/3D/Sherman.obj",
     mtl: "/3D/Blank.mtl"
   },
   {
     id: "fal",
     nombre: "FAL",
-    img: "/images/fal.jpg",
+    img: "/3D/images/fal.png",
     obj: "/3D/FAL.obj",
     mtl: "/3D/FAL.mtl"
   },

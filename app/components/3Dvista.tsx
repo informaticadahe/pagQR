@@ -72,7 +72,7 @@ export default function ThreeViewer({ obj, mtl, name }: ThreeViewerProps) {
 
   return (
     <div className="p-4 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">{name}</h2>
+      <h2 className="text-xl font-bolder mb-4">{name}</h2>
       <div ref={mountRef} className="shadow-lg rounded" />
     </div>
   );
