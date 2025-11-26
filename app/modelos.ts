@@ -13,10 +13,15 @@ interface SpecsVehiculo {
   alcance: number;
   largo: number;
   peso: number;
-  capacidad: number;
+  capacidad: string;
   distanciaCapacidad: number;
   velocidadMax: number;
-  capacidadTanque: number;
+  ancho: number;
+  altura: number;
+  motor: string;
+  suspension: string;
+  armamentoPrincipal: string;
+  armamentoSecundario: string;
 }
 
 interface SpecsMaterial {
@@ -65,12 +70,17 @@ export const modelos: Modelo[] = [
     tipo: "vehiculo",
     specs: {
       alcance: 161,
-      largo: 5.84,
-      peso: 30300,
-      capacidad: 5,
+      largo: 6.9,
+      ancho: 2.7,
+      altura: 2.34,
+      peso: 16700,
+      capacidad: "2 + 9 pasajeros",
+      armamentoPrincipal: "30 mm cañón automático",
+      armamentoSecundario: "7.62 mm MG, M2HB 12,7 mm HMG",
+      motor: "Iveco Cursor 9 motor diesel, 383 CV",
+      suspension: "Hidroneumática",
       distanciaCapacidad: 193,
-      velocidadMax: 42,
-      capacidadTanque: 660
+      velocidadMax: 110,
     },
     obj: "/3D/Sherman.obj",
     mtl: "/3D/Blank.mtl"
@@ -93,3 +103,23 @@ export const modelos: Modelo[] = [
     mtl: "/3D/FAL.mtl"
   }
 ];
+
+/* Peso 16,7 t
+Longitud 6.9 m (23 pies)
+Ancho 2,7 m (8,9 pies)
+Altura 2,34 m (7,7 pies)
+Tripulación 2 (+ 9 pasajeros)
+Principal 
+armamento
+30 mm cañón automático
+Secundaria 
+armamento
+7.62 mm MG
+M2HB 12,7 mm HMG
+Motor Iveco Cursor 9 motor diesel
+383 CV
+Suspensión Hidroneumática
+Operacional 
+gama
+600 kilometros (370 millas)
+Velocidad 110 kmh (68 mph) */
