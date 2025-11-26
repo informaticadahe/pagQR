@@ -20,7 +20,7 @@ export default function ModeloPage({ params }: ModeloPageProps) {
       <h1 className="text-3xl font-bold mb-6">{modelo.nombre}</h1>
       
       <div className="mb-6">
-        <ThreeViewer obj={modelo.obj} mtl={modelo.mtl} /* name={modelo.nombre} */ />
+        <ThreeViewer obj={modelo.obj} mtl={modelo.mtl} name="" />
       </div>
 
       <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-lg especificaciones" >
@@ -29,13 +29,13 @@ export default function ModeloPage({ params }: ModeloPageProps) {
         {modelo.tipo === "arma" && (
           <div className="grid grid-cols-2 gap-4">
             <li>
-              <span className="font-semibold">Alcance:</span> {modelo.specs.alcance} m
+              <span className="font-semibold">Alcance:</span> {modelo.specs.alcance} M
             </li>
             <li>
-              <span className="font-semibold">Largo:</span> {modelo.specs.largo} m
+              <span className="font-semibold">Largo:</span> {modelo.specs.largo} M
             </li>
             <li>
-              <span className="font-semibold">Peso:</span> {modelo.specs.peso} kg
+              <span className="font-semibold">Peso:</span> {modelo.specs.peso} KG
             </li>
             <li>
               <span className="font-semibold">Capacidad:</span> {modelo.specs.capacidad} municiones
@@ -44,7 +44,7 @@ export default function ModeloPage({ params }: ModeloPageProps) {
               <span className="font-semibold">Munición:</span> {modelo.specs.municion} mm
             </li>
             <li>
-              <span className="font-semibold">Cadencia:</span> {modelo.specs.cadencia} rpm
+              <span className="font-semibold">Cadencia:</span> {modelo.specs.cadencia} RPM
             </li>
             <li>
               <span className="font-semibold">Velocidad de bala:</span> {modelo.specs.velocidadBala} m/s
@@ -55,22 +55,22 @@ export default function ModeloPage({ params }: ModeloPageProps) {
         {modelo.tipo === "vehiculo" && (
           <div className="grid grid-cols-2 gap-4">
             <li>
-              <span className="font-semibold">Alcance:</span> {modelo.specs.alcance} km
+              <span className="font-semibold">Alcance:</span> {modelo.specs.alcance} Km
             </li>
             <li>
-              <span className="font-semibold">Largo:</span> {modelo.specs.largo} m
+              <span className="font-semibold">Largo:</span> {modelo.specs.largo} M
             </li>
             <li>
-              <span className="font-semibold">Peso:</span> {modelo.specs.peso} kg
+              <span className="font-semibold">Peso:</span> {modelo.specs.peso} KG
             </li>
             <li>
               <span className="font-semibold">Capacidad:</span> {modelo.specs.capacidad} personas
             </li>
             <li>
-              <span className="font-semibold">Autonomía:</span> {modelo.specs.distanciaCapacidad} km
+              <span className="font-semibold">Autonomía:</span> {modelo.specs.distanciaCapacidad} Km
             </li>
             <li>
-              <span className="font-semibold">Velocidad máxima:</span> {modelo.specs.velocidadMax} km/h
+              <span className="font-semibold">Velocidad máxima:</span> {modelo.specs.velocidadMax} Km/h
             </li>
             <li>
               <span className="font-semibold">Capacidad del tanque:</span> {modelo.specs.capacidadTanque} L

@@ -21,7 +21,7 @@ interface SpecsVehiculo {
 
 interface SpecsMaterial {
   descripcion?: string;
-  [key: string]: any; // Para propiedades flexibles
+  [key: string]: any;
 }
 
 // Modelos con tipos discriminados
@@ -60,7 +60,7 @@ export type Modelo = ModeloArma | ModeloVehiculo | ModeloMaterial;
 export const modelos: Modelo[] = [
   {
     id: "sherman",
-    nombre: "Sherman",
+    nombre: "Tanque M60 Patton ",
     img: "/3D/images/sherman.png",
     tipo: "vehiculo",
     specs: {
@@ -77,7 +77,7 @@ export const modelos: Modelo[] = [
   },
   {
     id: "fal",
-    nombre: "FAL",
+    nombre: "Fusil Automático Ligero",
     img: "/3D/images/fal.png",
     tipo: "arma",
     specs: {
