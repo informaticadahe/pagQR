@@ -92,7 +92,7 @@ export const modelos: Modelo[] = [
     tipo: "arma",
     specs: {
       alcance: 600,
-      largo: 1.05,
+      largo: 1.09,
       peso: 4.45,
       capacidad: 20,
       municion: 7.62,
