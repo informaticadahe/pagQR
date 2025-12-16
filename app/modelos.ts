@@ -103,23 +103,3 @@ export const modelos: Modelo[] = [
     mtl: "/3D/FAL.mtl"
   }
 ];
-
-/* Peso 16,7 t
-Longitud 6.9 m (23 pies)
-Ancho 2,7 m (8,9 pies)
-Altura 2,34 m (7,7 pies)
-Tripulación 2 (+ 9 pasajeros)
-Principal 
-armamento
-30 mm cañón automático
-Secundaria 
-armamento
-7.62 mm MG
-M2HB 12,7 mm HMG
-Motor Iveco Cursor 9 motor diesel
-383 CV
-Suspensión Hidroneumática
-Operacional 
-gama
-600 kilometros (370 millas)
-Velocidad 110 kmh (68 mph) */
