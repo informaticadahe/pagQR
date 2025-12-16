@@ -64,8 +64,8 @@ export type Modelo = ModeloArma | ModeloVehiculo | ModeloMaterial;
 
 export const modelos: Modelo[] = [
   {
-    id: "M60",
-    nombre: "Tanque M60 Patton ",
+    id: "SHERMAN",
+    nombre: "Tanque SHERMAN ",
     img: "/3D/images/sherman.png",
     tipo: "vehiculo",
     specs: {
