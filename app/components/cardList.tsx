@@ -5,7 +5,7 @@ import { modelos } from "../modelos";
 
 export default function CardList() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 gap-4 max-w-12xl mx-auto p-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-12xl mx-auto p-1">
       {modelos.map((item) => (
         <Link
           href={`/modelo/${item.id}`}
