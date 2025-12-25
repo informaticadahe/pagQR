@@ -101,5 +101,39 @@ export const modelos: Modelo[] = [
     },
     obj: "/3D/FAL.obj",
     mtl: "/3D/FAL.mtl"
+  },
+  {
+    id: "arco",
+    nombre: "arco compuesto",
+    img: "/3D/images/arco.png",
+    tipo: "arma",
+    specs: {
+      alcance: 600,
+      largo: 1.09,
+      peso: 4.45,
+      capacidad: 20,
+      municion: 7.62,
+      cadencia: 650,
+      velocidadBala: 823
+    },
+    obj: "/3D/ARCODEF.obj",
+    mtl: "/3D/ARCODEF.stl"
+  },
+  {
+    id: "canon",
+    nombre: "cañon",
+    img: "/3D/images/canon.png",
+    tipo: "arma",
+    specs: {
+      alcance: 600,
+      largo: 1.09,
+      peso: 4.45,
+      capacidad: 20,
+      municion: 7.62,
+      cadencia: 650,
+      velocidadBala: 823
+    },
+    obj: "/3D/canon.obj",
+    mtl: "/3D/canon.mtl"
   }
 ];
